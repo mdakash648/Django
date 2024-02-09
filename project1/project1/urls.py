@@ -17,9 +17,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from games import views
+from blog import views as blog_page
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.print),
-    path('about/', views.about)
+    path('about/', views.about),
+    path('blog/', blog_page.blog_content)
 ]
