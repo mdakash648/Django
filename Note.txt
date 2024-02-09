@@ -19,3 +19,13 @@
 14. open project folder > urls.py 
 15. import view.py  "from <your app name> import views"
 16. add path "path('', views.machine)"
+
+
+How to create template
+1. create <your project folder>  --> "template" folder
+2. open "settings.py" "import os" add template folder " TEMPLATES_DIR = os.path.join(BASE_DIR, "template") " add   " 'DIRS': [TEMPLATES_DIR], " under Templates
+3. <your app folder> --> "views.py" --> 
+def home(request):
+	return render(request,'home.html')
+
+
