@@ -4,3 +4,6 @@ from django.http import HttpResponse
 
 def print(request):
     return HttpResponse("this is my first django project")
+
+def about(request):
+    return HttpResponse("<h1>this is my about page</h1>")

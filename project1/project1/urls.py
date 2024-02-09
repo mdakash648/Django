@@ -20,5 +20,6 @@ from games import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.print)
+    path('', views.print),
+    path('about/', views.about)
 ]
