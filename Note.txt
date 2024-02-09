@@ -1,0 +1,21 @@
+1. install python
+2. install vscode
+3. install python extention
+4. install django "pip install "pip install django"
+5. check django version "django-admin --version"
+6. create folder "mkdir <folder name>"
+7. create project "django-admin startproject <Project name>"
+8. open your project folder in terminal "cd <project name>" and start server "python manage.py runserver"
+9. create app in project folder "python manage.py startapp <app name>"
+10. add new create app in "settings.py" under "INSTALLED_APPS" add your app name " '<app folder name>', "
+
+------------display some text in website-----------------
+
+11. open app folder > views.py
+12. first import httprespose "from kjango.http import HttpResponse"
+13. create funtion for display text  " def machine(request):
+						return HttpResponse("this is my first django project") "
+
+14. open project folder > urls.py 
+15. import view.py  "from <your app name> import views"
+16. add path "path('', views.machine)"
