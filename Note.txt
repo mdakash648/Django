@@ -12,7 +12,7 @@
 ------------display some text in website-----------------
 
 11. open app folder > views.py
-12. first import httprespose "from kjango.http import HttpResponse"
+12. first import httprespose "from django.http import HttpResponse"
 13. create funtion for display text  " def machine(request):
 						return HttpResponse("this is my first django project") "
 
